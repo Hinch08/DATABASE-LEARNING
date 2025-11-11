@@ -35,7 +35,7 @@ TYPES OF DATABASES.
 -
       SCHOOL_DATABASE
 -students.(names,admission numbers,class,age,gender)
--staff.(contact_id,name,role,salary,age,gender)
+-staff.(name,contact_id,role,salary,age,gender)
 -school items(accessories)(name,quantity,price)
 -Results(students marks)(admission_number,maths,eng,kisw,pt,total marks,Average,grade,remarks)
 -subjects.()
