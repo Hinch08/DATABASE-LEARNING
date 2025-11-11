@@ -52,5 +52,5 @@ TYPES OF DATABASES.
  =CREDIT=>GOOD
  =PASS=>AVERAGE needs improvement
  =Fail=>Retake
- =IF(I4="Distinction","Excellent",IF(I4="Credit","Good",IF(I4="Pass","Average needs improvement","Unahitaji viboko")))
+ =IF(I4="Distinction","Excellent",IF(I4="Credit","Good",IF(I4="Pass","Average needs improvement","FAIL")))
 
