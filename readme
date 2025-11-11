@@ -1,0 +1,56 @@
+A database is a structured  of collection data.
+
+TYPES OF DATABASES.
+-Relational Databases.
+-Non relational databases.
+
+1.RELATIONAL DATABASES.(SQL)
+-Data are stored in related tables(ROWS and COLUMNS)
+-Examples of these databases:POSTGRES,MYSQL,SQLITE,ORACLE,SQLSERVER.
+-They are related bcoz one has to come from the parent and the other the child.
+
+2.NON-RELATIONAL DATABASES.
+-It is a flexible data models not just tables.(They don't have to be related)
+-Examples:MONGO_DB,CASSANDRA_DB,REDDISDB,Hbase,FIREBASE,MARIA_DB.
+
+           RELATIONAL DATABASE(SQL)
+-SQL(structured query language).
+-structured(stores data in rows and columns) 
+-query:key words used to interact with a database.(A request in an action)
+
+           KEY CONCEPTS TO UNDERSTAND DATABASE.(CRUD)
+1. ERD(ENTITY RELATIONSHIPS DIAGRAM)(DRAWING)
+2. QUERIES.
+
+           EXCEL.
+-A workbook in excel is a database in SQL.
+-click on a blank workbook.
+-it opens a blank worksheet.
+-A worksheet in excel is a table in SQL.
+-The worksheet contains Rows and Columns.
+-In excel ROWS are marked with NUMERIC VALUES.
+-COLUMNS are marked with ALPHABETICAL CHARACTERS.
+-A CELL is where a row and a column meet.
+-At the bottom of the excel there is something called sheet1,rename it to school_db
+-
+      SCHOOL_DATABASE
+-students.(names,admission numbers,class,age,gender)
+-staff.(contact_id,name,role,salary,age,gender)
+-school items(accessories)(name,quantity,price)
+-Results(students marks)(admission_number,maths,eng,kisw,pt,total marks,Average,grade,remarks)
+-subjects.()
+-geting the total =
+=sum(B2:F2,#then click enter)  
+
+                    GRADING.
+       70=>DISTINCTION
+       50>70=>CREDIT
+       40=PASS
+       ELSE:FAILED.
+ =IF(H2>70,"Distinction",IF(H2>50,"Credit",IF(H2>40,"PASS","FAIL")))
+ =Distinction=>Excellent
+ =CREDIT=>GOOD
+ =PASS=>AVERAGE needs improvement
+ =Fail=>Retake
+ =IF(I4="Distinction","Excellent",IF(I4="Credit","Good",IF(I4="Pass","Average needs improvement","Unahitaji viboko")))
+
