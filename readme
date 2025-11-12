@@ -54,3 +54,14 @@ TYPES OF DATABASES.
  =Fail=>Retake
  =IF(I4="Distinction","Excellent",IF(I4="Credit","Good",IF(I4="Pass","Average needs improvement","FAIL")))
 
+        RELATED WORKSHEETS IN EXCEL
+-A workbook in excel is a database in SQL.
+-Worksheets in excel are tables in SQL.
+-students can work with results therefore we link the two worksheets.
+-
+       SALES MANAGEMENT DATABASE.
+       -products(parent worksheet)(id,name,buyingprice,selling price,quantity)
+       -customers(parent worksheet)(id,name,contact,email,address)
+       -supplies(parent worksheet)(id,name,contact,email,address)
+       -employees(parent worksheet)(id,name,role,contact,salary)
+       -sales (child worksheet)(saledate,product_id,customer_id,quantity,total_amount)       
