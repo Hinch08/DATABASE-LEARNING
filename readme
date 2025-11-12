@@ -64,4 +64,54 @@ TYPES OF DATABASES.
        -customers(parent worksheet)(id,name,contact,email,address)
        -supplies(parent worksheet)(id,name,contact,email,address)
        -employees(parent worksheet)(id,name,role,contact,salary)
-       -sales (child worksheet)(saledate,product_id,customer_id,quantity,total_amount)       
+       -sales (child worksheet)(saledate,product_id,customer_id,quantity,total_amount)
+
+
+       E.R.D(ENTITY RELATIONSHIP DIAGRAM)
+-An entity is a database table.
+-relationships are connections btwn tables.
+-Diagram isa a visual representation of how tables are related.
+-ERD is a visual representation of how tables are related in a database.(with entities,ATTRIBUTES and relationships)
+-attributes are basically columns in the database.
+-parent entitities.-Can a exist without another table.
+-child entitiets.->cannot exist without the parent table.
+
+         BUILDING OF A CAMPUS DATABASE.
+         -ENTITITIES
+         1.STUDENTS(parent on itself)
+         -id
+         -name
+         -admission_number
+         -email
+         -contact
+         -location
+
+         2.STAFF(parent on itself)
+         -id
+         -staff_name
+         -role
+         -contact
+         -location
+
+         3.COURSES(parent to enrollments and child of staff)()
+         -id
+         -course_name
+         -description
+         -staff_id
+         -duration
+
+         4.ENROLMENTS(Child of courses and students)
+         -id
+         -student_id
+         -date
+         -course_id
+
+         HOSPITAL DATABASE.
+            -ENTITITIES
+            1.PATIENTS(parent)
+            2.DOCTORS(parent)
+            3.WARDS(parent)
+            4.PAYMENTS(child of patients)
+            5.APPOINTMENTS.(child of patients and doctors)
+            6.TREATMENTS.(child of appointments)
+            7.ADMISSIONS.(child of ward and appointments)
