@@ -135,4 +135,22 @@ TYPES OF DATABASES.
          14.employees(parent of orders and child of departments)
          15.stores(child of branch and parent of pickup stations)
          16.pickup stations(child of stores and parent of deliveries)
-         17.
+
+
+                 RELATIONSHIPS
+                 -how entities are related to one another.
+
+                 Types of relationships.
+                 -one to one relationships.
+                 ->relationship whereby one record in parent is related to only 1 record in child.(order and orderdetails).
+                 ->one user one customer
+                 
+                 -one to many relationships
+                 ->one record in the parent table are related to multiple records in the child table.
+                 ->e.g pickup to deliveries.
+                 ->branch to departments.
+                 ->categories to multiple products
+                 
+                 -many to many relationships
+                 ->many records on parents table are recorded to many in the childs table.
+
