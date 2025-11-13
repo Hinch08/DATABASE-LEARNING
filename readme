@@ -115,3 +115,24 @@ TYPES OF DATABASES.
             5.APPOINTMENTS.(child of patients and doctors)
             6.TREATMENTS.(child of appointments)
             7.ADMISSIONS.(child of ward and appointments)
+
+
+         JUMIA ERD
+         -entities
+         1.Branch(parent)
+         2.customers(parent of orders and child of users)
+         3.Departments(parents of employees and child of branch)
+         4.orders(parent of orderdetails shipments,payments,deliveries,customers,employeesdetails)
+         5.products(parent of orderdetails,child of vendors,categories)
+         6.vendors(parent of products)
+         7.shipments(child to orders )
+         8.categories(parent of products)
+         9.reviews(child of orderdetails)
+         10.orderdetails(child to orders,products,parent of reviews)
+         11.PAYMENTS(child of orders)
+         12.Deliveries(child of orders,pickup stations)
+         13.users(parent)
+         14.employees(parent of orders and child of departments)
+         15.stores(child of branch and parent of pickup stations)
+         16.pickup stations(child of stores and parent of deliveries)
+         17.
