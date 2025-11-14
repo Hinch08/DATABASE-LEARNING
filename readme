@@ -114,6 +114,8 @@ TYPES OF DATABASES.
             4.PAYMENTS(child of patients)
             5.APPOINTMENTS.(child of patients and doctors)
             6.TREATMENTS.(child of appointments)
+
+
             7.ADMISSIONS.(child of ward and appointments)
 
 
@@ -153,4 +155,12 @@ TYPES OF DATABASES.
                  
                  -many to many relationships
                  ->many records on parents table are recorded to many in the childs table.
+
+
+                 PRIMARY KEY.
+                 -A column in every table used to uniquely identify a row in a table.
+
+                 FOREIGN KEY.
+                 -A column in every childs table and its also the primary key in the parents table.
+                 
 
