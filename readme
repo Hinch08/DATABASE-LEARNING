@@ -126,7 +126,7 @@ TYPES OF DATABASES.
          3.Departments(parents of employees and child of branch)
          4.orders(parent of orderdetails shipments,payments,deliveries,customers,employeesdetails)
          5.products(parent of orderdetails,child of vendors,categories)
-         6.vendors(parent of products)
+         6.vendors(parent of products,child of users)
          7.shipments(child to orders )
          8.categories(parent of products)
          9.reviews(child of orderdetails)
@@ -162,5 +162,66 @@ TYPES OF DATABASES.
 
                  FOREIGN KEY.
                  -A column in every childs table and its also the primary key in the parents table.
-                 
 
+
+      SQL QUERIES.
+-Are used to interract with SQL databases.
+-Interract with these databases,read data in the database.
+-C.R.U.D(create,read,update,delete)
+-create:creating a database.
+-read:fetching data from the database table.
+->We use the key word SELECT followed the columns u want to display then the FROM key word then the table.
+-assume we have a table called students.
+SELECT * from students;
+select *from table_name;#select from table
+select customername,customerid from customers;
+->Where clause 
+->used to write conditions in a query.
+-select * from table_name where condition
+exapmle:SELECT * FROM Customers where country="Brazil";
+from W3 schools display customers coming fro london;
+#select * from customers where city="London";
+#select * from customers where city="london" or city="newyork";
+#select * from customers where orderid
+      BETWEEN (RANGE)
+-between is used in condition to specify range
+select*fromtable_name where column_name bewteen x and y;
+example:select * from products where price between 10 and 20;
+select * from products where price not between 10 and 100;
+
+      LIKE AND NOT LIKE
+-works with wildcats.
+-%means single,multiple, or none characters.
+-means single characters.
+select*from products where product name like '%'
+select*from products where product name like '%a'#ends with a
+select *from products where products name like 'a%' #starts with a
+select * from products where products name like '%a%'
+
+-orderby(placing on acertain order)
+-groupby(placing as a whole in a an ascending order)
+select categoryid count(*)
+->used to group rows that have the same value.
+
+-orderdetails.
+->total number of orderdetails for each products.
+
+SELECT sum(quantity) from orderdetails;
+
+SELECT count(productid)from products where price >25;
+
+SELECT OrderID, SUM(Quantity) AS [Total Quantity]
+FROM OrderDetails
+GROUP BY OrderID;
+
+SUM and JOINTS.
+
+dsiplay products in ascending orders.
+selct *from products order by categoryid 
+
+#exercise on group by
+
+-select categoryid,count(*)as no_products from products group by categoryid order by count(*) ASC;(ARRANGING FROM THE SMALLEST TO THE LARGEST).
+-select shippersid,count(*)as total_orders from orders group by shipperid order by count(*) desc;
+-select employeeid,count(*) as no_orders from orders group by employeeid order by count(*);
+-select  supplierid,count(*)as number_products from products group by supplierid order by count(*) desc;
