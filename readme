@@ -219,9 +219,16 @@ SUM and JOINTS.
 dsiplay products in ascending orders.
 selct *from products order by categoryid 
 
+-orderby is for columns.
+-groupby is for rows.
+
 #exercise on group by
 
 -select categoryid,count(*)as no_products from products group by categoryid order by count(*) ASC;(ARRANGING FROM THE SMALLEST TO THE LARGEST).
 -select shippersid,count(*)as total_orders from orders group by shipperid order by count(*) desc;
 -select employeeid,count(*) as no_orders from orders group by employeeid order by count(*);
 -select  supplierid,count(*)as number_products from products group by supplierid order by count(*) desc;
+
+SUM AND JOINS IN SQL.
+->select productid,sum(quantity)as total_quantity from orderdetails group by productid;
+->select orderid,sum(quantity)as total_quantity from orderdetails group by orderid;
